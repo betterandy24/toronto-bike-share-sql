@@ -1,6 +1,6 @@
 -- 07. What are the most popular routes, and who rides them?
 -- Top station-to-station routes (round trips excluded) in two views: all trips, and weekday
--- morning trips (7-10 a.m.), which are mostly commutes. Station names come from two joins
+-- morning trips (7-10 a.m., public holidays excluded), which are mostly commutes. Station names come from two joins
 -- to the station list. Shows the casual share and typical trip length on each route.
 
 WITH tagged AS (

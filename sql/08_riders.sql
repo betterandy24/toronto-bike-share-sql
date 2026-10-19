@@ -1,6 +1,6 @@
 -- 08. How do members and casual riders use the system differently?
 -- Trip counts, typical and long trip lengths (percentiles), the share of round trips and
--- the share of rides taken at weekends or on e-bikes (EFIT models), by
+-- the share of rides taken at weekends or public holidays, or on e-bikes (EFIT models), by
 -- rider type.
 
 SELECT
@@ -13,8 +13,8 @@ SELECT
                                                                      AS longer_than_30_min_pct,
     ROUND(100.0 * AVG(CASE WHEN start_station_id = end_station_id THEN 1 ELSE 0 END), 1)
                                                                      AS round_trip_pct,
-    ROUND(100.0 * AVG(CASE WHEN day_type = 'Weekend' THEN 1 ELSE 0 END), 1)
-                                                                     AS weekend_pct,
+    ROUND(100.0 * AVG(CASE WHEN day_type = 'Weekend/holiday' THEN 1 ELSE 0 END), 1)
+                                                                     AS weekend_holiday_pct,
     ROUND(100.0 * AVG(CASE WHEN bike_type = 'E-bike' THEN 1 ELSE 0 END), 1)
                                                                      AS ebike_pct
 FROM trips

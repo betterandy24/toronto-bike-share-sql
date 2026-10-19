@@ -29,6 +29,18 @@ SELECT
     TRIM(COLUMNS('^(bike_)?model$'))                        AS bike_model
 FROM raw_trips;
 
+-- Ontario public holidays in January-September 2026 (including Toronto's Civic Holiday).
+-- Commuting stops on these days, so they are grouped with weekends rather than weekdays.
+CREATE OR REPLACE TABLE holidays AS
+SELECT CAST(holiday_date AS DATE) AS holiday_date, holiday_name
+FROM (VALUES ('2026-01-01', 'New Year''s Day'),
+             ('2026-02-16', 'Family Day'),
+             ('2026-04-03', 'Good Friday'),
+             ('2026-05-18', 'Victoria Day'),
+             ('2026-07-01', 'Canada Day'),
+             ('2026-08-03', 'Civic Holiday'),
+             ('2026-09-07', 'Labour Day')) AS t(holiday_date, holiday_name);
+
 -- Keep trips with both stations, valid times and a duration between 1 minute and 3 hours.
 -- Very short trips are usually a rider re-docking the same bike; very long ones are
 -- usually bikes that were not returned properly.
@@ -52,8 +64,10 @@ SELECT
     CAST(start_time AS DATE)                           AS ride_date,
     date_trunc('month', start_time)                    AS ride_month,
     hour(start_time)                                   AS ride_hour,
-    CASE WHEN dayofweek(start_time) IN (0, 6) THEN 'Weekend' ELSE 'Weekday' END AS day_type
-FROM parsed_trips
+    CASE WHEN dayofweek(start_time) IN (0, 6) OR h.holiday_date IS NOT NULL
+         THEN 'Weekend/holiday' ELSE 'Weekday' END     AS day_type
+FROM parsed_trips p
+LEFT JOIN holidays h ON h.holiday_date = CAST(p.start_time AS DATE)
 WHERE start_station_id IS NOT NULL
   AND end_station_id   IS NOT NULL
   AND start_time       IS NOT NULL

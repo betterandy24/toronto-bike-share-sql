@@ -1,5 +1,5 @@
 -- 03. When during the day do people ride?
--- Average trips per hour on weekdays and weekends, separately for members and casual riders.
+-- Average trips per hour on weekdays and on weekends/public holidays, separately for members and casual riders.
 -- Dividing by the number of days of each type turns totals into a typical day.
 
 WITH day_counts AS (

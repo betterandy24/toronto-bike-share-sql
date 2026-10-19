@@ -1,4 +1,4 @@
--- 04. Which stations are busiest, and how concentrated is demand?
+-- 04. Which stations are busiest?
 -- Ranks stations by departures (RANK), shows each station's share and the running total
 -- (SUM OVER), and the casual-rider share at each station.
 
