@@ -58,11 +58,9 @@ for ax, day_type in zip(axes, ["Weekday", "Weekend/holiday"]):
     for rider, color in [("Member", "#1f77b4"), ("Casual", "#ff7f0e")]:
         r = d[d["rider_type"] == rider]
         ax.plot(r["hour"], r["avg_trips_per_day"], color=color, linewidth=2, label=rider)
-        ax.annotate(rider, (r["hour"].iloc[-1], r["avg_trips_per_day"].iloc[-1]),
-                    xytext=(4, 0), textcoords="offset points", va="center", fontsize=9)
     ax.set_title("Weekdays" if day_type == "Weekday" else "Weekends and public holidays")
     ax.set_xticks(range(0, 24, 3))
-    ax.set_xlim(0, 26)
+    ax.set_xlim(0, 23)
     ax.set_xlabel("Hour of day (trip start)")
     ax.grid(axis="y", alpha=0.3)
     for side in ["top", "right"]:

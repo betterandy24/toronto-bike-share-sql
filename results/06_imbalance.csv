@@ -1,21 +1,21 @@
-pattern,station_name,bikes_out_per_morning,bikes_in_per_morning,net_bikes_per_morning
-Empties out,Fort York Blvd / Capreol Ct,27.0,5.6,-21.5
-Empties out,Bathurst St / Front St W,22.8,4.6,-18.2
-Empties out,Lisgar Park,19.8,4.1,-15.7
-Empties out,Church St / Alexander St,18.6,5.1,-13.5
-Empties out,Dundas St E / Regent Park Blvd,22.6,9.5,-13.1
-Empties out,144 Harrison St,15.1,2.2,-12.9
-Empties out,Western Battery Rd / Pirandello St,13.9,1.1,-12.7
-Empties out,Dan Leckie Way / Fort York Blvd,14.9,2.3,-12.7
-Empties out,Mill St / Cherry St,18.4,5.8,-12.6
-Empties out,Spadina Ave / Blue Jays Way,15.2,2.6,-12.5
-Fills up,Elizabeth St / Elm St,15.1,33.6,18.5
-Fills up,York St / Queens Quay W,16.3,35.3,19.0
-Fills up,Bay St / Albert St,2.8,23.9,21.2
-Fills up,King St W / University Ave,2.9,32.0,29.1
-Fills up,Wellington St W / Bay St,2.5,41.7,39.2
-Fills up,Front St W / Bay St (South Side),11.9,56.5,44.6
-Fills up,University Ave / Gerrard St W (East Side),9.4,82.5,73.1
-Fills up,Adelaide St W / Bay St,1.7,92.1,90.4
-Fills up,Temperance St Station,2.3,107.3,104.9
-Fills up,King St W / Bay St (West Side),2.5,184.9,182.4
+pattern,station_name,bikes_out_per_morning,bikes_in_per_morning,net_bikes_per_morning,net_jan_apr
+Empties out,Fort York Blvd / Capreol Ct,39.2,7.6,-31.5,-10.3
+Empties out,Bathurst St / Front St W,31.3,6.7,-24.6,-11.5
+Empties out,Lisgar Park,29.2,5.9,-23.3,-6.8
+Empties out,144 Harrison St,24.4,3.6,-20.9,-3.7
+Empties out,439 Sherbourne St,23.6,3.6,-20.0,-3.8
+Empties out,Western Battery Rd / Pirandello St,21.8,1.9,-20.0,-4.5
+Empties out,Mill St / Cherry St,28.3,8.6,-19.7,-4.3
+Empties out,Dan Leckie Way / Fort York Blvd,23.0,3.5,-19.5,-5.0
+Empties out,Church St / Alexander St,26.1,6.9,-19.2,-7.1
+Empties out,Spadina Ave / Blue Jays Way,22.5,4.1,-18.4,-6.0
+Fills up,York St / Queens Quay W,24.9,53.2,28.3,8.4
+Fills up,Simcoe St / Pullan Pl,8.6,37.1,28.5,6.0
+Fills up,Bay St / Albert St,3.7,35.0,31.3,9.8
+Fills up,King St W / University Ave,4.5,49.1,44.6,11.8
+Fills up,Wellington St W / Bay St,3.8,65.3,61.5,14.0
+Fills up,Front St W / Bay St (South Side),18.0,79.6,61.6,26.2
+Fills up,University Ave / Gerrard St W (East Side),13.9,123.6,109.6,32.5
+Fills up,Temperance St Station,3.5,151.9,148.5,58.3
+Fills up,Adelaide St W / Bay St,2.6,152.8,150.1,22.2
+Fills up,King St W / Bay St (West Side),3.8,277.0,273.2,82.7

@@ -29,106 +29,106 @@ Shorter than 1 minute or longer than 3 hours   26934
 ## 03. When during the day do people ride?
 
 ```
-day_type rider_type  hour  avg_trips_per_day  share_of_day_pct
- Weekday     Casual     0              102.1               1.4
- Weekday     Casual     1               56.9               0.8
- Weekday     Casual     2               38.9               0.5
- Weekday     Casual     3               19.1               0.3
- Weekday     Casual     4               13.8               0.2
- Weekday     Casual     5               29.0               0.4
- Weekday     Casual     6               68.7               1.0
- Weekday     Casual     7              139.6               1.9
- Weekday     Casual     8              316.2               4.4
- Weekday     Casual     9              226.5               3.1
- Weekday     Casual    10              211.3               2.9
- Weekday     Casual    11              279.8               3.9
- Weekday     Casual    12              338.2               4.7
- Weekday     Casual    13              380.1               5.3
- Weekday     Casual    14              419.2               5.8
- Weekday     Casual    15              471.8               6.6
- Weekday     Casual    16              593.5               8.3
- Weekday     Casual    17              796.0              11.1
- Weekday     Casual    18              738.7              10.3
- Weekday     Casual    19              598.3               8.3
- Weekday     Casual    20              468.2               6.5
- Weekday     Casual    21              362.8               5.0
- Weekday     Casual    22              289.5               4.0
- Weekday     Casual    23              233.3               3.2
- Weekday     Member     0              175.1               1.0
- Weekday     Member     1               86.6               0.5
- Weekday     Member     2               56.5               0.3
- Weekday     Member     3               32.3               0.2
- Weekday     Member     4               40.9               0.2
- Weekday     Member     5              114.4               0.6
- Weekday     Member     6              335.1               1.8
- Weekday     Member     7              770.9               4.2
- Weekday     Member     8             1665.2               9.1
- Weekday     Member     9              977.4               5.4
- Weekday     Member    10              609.3               3.3
- Weekday     Member    11              660.9               3.6
- Weekday     Member    12              789.4               4.3
- Weekday     Member    13              794.4               4.4
- Weekday     Member    14              824.4               4.5
- Weekday     Member    15             1011.2               5.5
- Weekday     Member    16             1555.7               8.5
- Weekday     Member    17             2180.1              12.0
- Weekday     Member    18             1692.9               9.3
- Weekday     Member    19             1221.7               6.7
- Weekday     Member    20              945.5               5.2
- Weekday     Member    21              747.3               4.1
- Weekday     Member    22              566.8               3.1
- Weekday     Member    23              387.9               2.1
- Weekend     Casual     0              243.2               2.6
- Weekend     Casual     1              179.5               1.9
- Weekend     Casual     2              164.7               1.7
- Weekend     Casual     3               86.8               0.9
- Weekend     Casual     4               38.4               0.4
- Weekend     Casual     5               24.7               0.3
- Weekend     Casual     6               45.1               0.5
- Weekend     Casual     7               76.6               0.8
- Weekend     Casual     8              135.6               1.4
- Weekend     Casual     9              242.5               2.6
- Weekend     Casual    10              372.5               3.9
- Weekend     Casual    11              503.2               5.3
- Weekend     Casual    12              596.3               6.3
- Weekend     Casual    13              663.2               7.0
- Weekend     Casual    14              747.9               7.9
- Weekend     Casual    15              787.9               8.3
- Weekend     Casual    16              785.6               8.3
- Weekend     Casual    17              795.5               8.4
- Weekend     Casual    18              778.8               8.2
- Weekend     Casual    19              691.4               7.3
- Weekend     Casual    20              527.7               5.6
- Weekend     Casual    21              369.9               3.9
- Weekend     Casual    22              303.2               3.2
- Weekend     Casual    23              302.8               3.2
- Weekend     Member     0              341.1               2.4
- Weekend     Member     1              232.3               1.7
- Weekend     Member     2              180.7               1.3
- Weekend     Member     3               98.3               0.7
- Weekend     Member     4               56.2               0.4
- Weekend     Member     5               57.6               0.4
- Weekend     Member     6              124.9               0.9
- Weekend     Member     7              220.2               1.6
- Weekend     Member     8              374.5               2.7
- Weekend     Member     9              590.8               4.2
- Weekend     Member    10              766.2               5.5
- Weekend     Member    11              881.0               6.3
- Weekend     Member    12              953.9               6.8
- Weekend     Member    13              991.1               7.1
- Weekend     Member    14             1039.4               7.4
- Weekend     Member    15             1064.8               7.6
- Weekend     Member    16             1084.6               7.7
- Weekend     Member    17             1037.5               7.4
- Weekend     Member    18              993.2               7.1
- Weekend     Member    19              860.2               6.1
- Weekend     Member    20              678.6               4.8
- Weekend     Member    21              541.0               3.9
- Weekend     Member    22              456.8               3.3
- Weekend     Member    23              383.8               2.7
+       day_type rider_type  hour  avg_trips_per_day  share_of_day_pct
+        Weekday     Casual     0               98.3               1.4
+        Weekday     Casual     1               54.5               0.8
+        Weekday     Casual     2               36.8               0.5
+        Weekday     Casual     3               17.5               0.3
+        Weekday     Casual     4               13.2               0.2
+        Weekday     Casual     5               29.3               0.4
+        Weekday     Casual     6               70.0               1.0
+        Weekday     Casual     7              142.1               2.0
+        Weekday     Casual     8              323.3               4.6
+        Weekday     Casual     9              225.9               3.2
+        Weekday     Casual    10              202.8               2.9
+        Weekday     Casual    11              265.7               3.8
+        Weekday     Casual    12              320.1               4.6
+        Weekday     Casual    13              358.1               5.1
+        Weekday     Casual    14              394.7               5.6
+        Weekday     Casual    15              445.5               6.4
+        Weekday     Casual    16              572.6               8.2
+        Weekday     Casual    17              783.2              11.2
+        Weekday     Casual    18              727.3              10.4
+        Weekday     Casual    19              586.0               8.4
+        Weekday     Casual    20              459.5               6.6
+        Weekday     Casual    21              356.4               5.1
+        Weekday     Casual    22              285.3               4.1
+        Weekday     Casual    23              230.3               3.3
+        Weekday     Member     0              171.9               0.9
+        Weekday     Member     1               84.6               0.5
+        Weekday     Member     2               54.3               0.3
+        Weekday     Member     3               31.2               0.2
+        Weekday     Member     4               40.8               0.2
+        Weekday     Member     5              116.7               0.6
+        Weekday     Member     6              343.1               1.9
+        Weekday     Member     7              792.0               4.3
+        Weekday     Member     8             1714.9               9.3
+        Weekday     Member     9              994.5               5.4
+        Weekday     Member    10              605.0               3.3
+        Weekday     Member    11              650.9               3.5
+        Weekday     Member    12              781.8               4.3
+        Weekday     Member    13              783.9               4.3
+        Weekday     Member    14              811.5               4.4
+        Weekday     Member    15             1003.6               5.5
+        Weekday     Member    16             1569.5               8.5
+        Weekday     Member    17             2216.6              12.1
+        Weekday     Member    18             1712.9               9.3
+        Weekday     Member    19             1231.5               6.7
+        Weekday     Member    20              952.8               5.2
+        Weekday     Member    21              752.3               4.1
+        Weekday     Member    22              569.1               3.1
+        Weekday     Member    23              388.1               2.1
+Weekend/holiday     Casual     0              240.1               2.5
+Weekend/holiday     Casual     1              174.8               1.8
+Weekend/holiday     Casual     2              158.9               1.6
+Weekend/holiday     Casual     3               84.8               0.9
+Weekend/holiday     Casual     4               37.7               0.4
+Weekend/holiday     Casual     5               24.3               0.3
+Weekend/holiday     Casual     6               44.3               0.5
+Weekend/holiday     Casual     7               76.2               0.8
+Weekend/holiday     Casual     8              134.8               1.4
+Weekend/holiday     Casual     9              242.3               2.5
+Weekend/holiday     Casual    10              378.1               3.9
+Weekend/holiday     Casual    11              516.0               5.3
+Weekend/holiday     Casual    12              615.0               6.3
+Weekend/holiday     Casual    13              688.5               7.1
+Weekend/holiday     Casual    14              775.0               8.0
+Weekend/holiday     Casual    15              820.0               8.5
+Weekend/holiday     Casual    16              815.9               8.4
+Weekend/holiday     Casual    17              823.7               8.5
+Weekend/holiday     Casual    18              800.9               8.3
+Weekend/holiday     Casual    19              710.9               7.3
+Weekend/holiday     Casual    20              542.0               5.6
+Weekend/holiday     Casual    21              383.5               4.0
+Weekend/holiday     Casual    22              311.4               3.2
+Weekend/holiday     Casual    23              303.7               3.1
+Weekend/holiday     Member     0              334.5               2.4
+Weekend/holiday     Member     1              224.7               1.6
+Weekend/holiday     Member     2              175.2               1.2
+Weekend/holiday     Member     3               95.3               0.7
+Weekend/holiday     Member     4               55.2               0.4
+Weekend/holiday     Member     5               57.2               0.4
+Weekend/holiday     Member     6              124.5               0.9
+Weekend/holiday     Member     7              218.8               1.6
+Weekend/holiday     Member     8              371.0               2.6
+Weekend/holiday     Member     9              584.7               4.2
+Weekend/holiday     Member    10              762.8               5.4
+Weekend/holiday     Member    11              885.1               6.3
+Weekend/holiday     Member    12              956.9               6.8
+Weekend/holiday     Member    13              998.1               7.1
+Weekend/holiday     Member    14             1050.2               7.5
+Weekend/holiday     Member    15             1077.2               7.7
+Weekend/holiday     Member    16             1093.0               7.8
+Weekend/holiday     Member    17             1050.9               7.5
+Weekend/holiday     Member    18             1006.6               7.2
+Weekend/holiday     Member    19              868.2               6.2
+Weekend/holiday     Member    20              684.5               4.9
+Weekend/holiday     Member    21              546.9               3.9
+Weekend/holiday     Member    22              460.9               3.3
+Weekend/holiday     Member    23              383.7               2.7
 ```
 
-## 04. Which stations are busiest, and how concentrated is demand?
+## 04. Which stations are busiest?
 
 ```
  station_rank                            station_name  departures  share_of_all_trips_pct  cumulative_share_pct  casual_share_pct  n_stations
@@ -168,27 +168,27 @@ day_type rider_type  hour  avg_trips_per_day  share_of_day_pct
 ## 06. Which stations empty out or fill up during the weekday morning rush?
 
 ```
-    pattern                              station_name  bikes_out_per_morning  bikes_in_per_morning  net_bikes_per_morning
-Empties out               Fort York Blvd / Capreol Ct                   27.0                   5.6                  -21.5
-Empties out                  Bathurst St / Front St W                   22.8                   4.6                  -18.2
-Empties out                               Lisgar Park                   19.8                   4.1                  -15.7
-Empties out                  Church St / Alexander St                   18.6                   5.1                  -13.5
-Empties out            Dundas St E / Regent Park Blvd                   22.6                   9.5                  -13.1
-Empties out                           144 Harrison St                   15.1                   2.2                  -12.9
-Empties out        Western Battery Rd / Pirandello St                   13.9                   1.1                  -12.7
-Empties out           Dan Leckie Way / Fort York Blvd                   14.9                   2.3                  -12.7
-Empties out                       Mill St / Cherry St                   18.4                   5.8                  -12.6
-Empties out               Spadina Ave / Blue Jays Way                   15.2                   2.6                  -12.5
-   Fills up                     Elizabeth St / Elm St                   15.1                  33.6                   18.5
-   Fills up                   York St / Queens Quay W                   16.3                  35.3                   19.0
-   Fills up                        Bay St / Albert St                    2.8                  23.9                   21.2
-   Fills up                King St W / University Ave                    2.9                  32.0                   29.1
-   Fills up                  Wellington St W / Bay St                    2.5                  41.7                   39.2
-   Fills up          Front St W / Bay St (South Side)                   11.9                  56.5                   44.6
-   Fills up University Ave / Gerrard St W (East Side)                    9.4                  82.5                   73.1
-   Fills up                    Adelaide St W / Bay St                    1.7                  92.1                   90.4
-   Fills up                     Temperance St Station                    2.3                 107.3                  104.9
-   Fills up            King St W / Bay St (West Side)                    2.5                 184.9                  182.4
+    pattern                              station_name  bikes_out_per_morning  bikes_in_per_morning  net_bikes_per_morning  net_jan_apr
+Empties out               Fort York Blvd / Capreol Ct                   39.2                   7.6                  -31.5        -10.3
+Empties out                  Bathurst St / Front St W                   31.3                   6.7                  -24.6        -11.5
+Empties out                               Lisgar Park                   29.2                   5.9                  -23.3         -6.8
+Empties out                           144 Harrison St                   24.4                   3.6                  -20.9         -3.7
+Empties out                         439 Sherbourne St                   23.6                   3.6                  -20.0         -3.8
+Empties out        Western Battery Rd / Pirandello St                   21.8                   1.9                  -20.0         -4.5
+Empties out                       Mill St / Cherry St                   28.3                   8.6                  -19.7         -4.3
+Empties out           Dan Leckie Way / Fort York Blvd                   23.0                   3.5                  -19.5         -5.0
+Empties out                  Church St / Alexander St                   26.1                   6.9                  -19.2         -7.1
+Empties out               Spadina Ave / Blue Jays Way                   22.5                   4.1                  -18.4         -6.0
+   Fills up                   York St / Queens Quay W                   24.9                  53.2                   28.3          8.4
+   Fills up                     Simcoe St / Pullan Pl                    8.6                  37.1                   28.5          6.0
+   Fills up                        Bay St / Albert St                    3.7                  35.0                   31.3          9.8
+   Fills up                King St W / University Ave                    4.5                  49.1                   44.6         11.8
+   Fills up                  Wellington St W / Bay St                    3.8                  65.3                   61.5         14.0
+   Fills up          Front St W / Bay St (South Side)                   18.0                  79.6                   61.6         26.2
+   Fills up University Ave / Gerrard St W (East Side)                   13.9                 123.6                  109.6         32.5
+   Fills up                     Temperance St Station                    3.5                 151.9                  148.5         58.3
+   Fills up                    Adelaide St W / Bay St                    2.6                 152.8                  150.1         22.2
+   Fills up            King St W / Bay St (West Side)                    3.8                 277.0                  273.2         82.7
 ```
 
 ## 07. What are the most popular routes, and who rides them?
@@ -206,10 +206,10 @@ Empties out               Spadina Ave / Blue Jays Way                   15.2    
         All trips           9      Hanlan's Point Ferry Dock       Ward's Island Ferry Dock   6437              91.4            59.4
         All trips          10           Hanlan's Point Beach      Hanlan's Point Ferry Dock   6364              63.7             6.1
 Weekday 7-10 a.m.           1        King St W / Portland St King St W / Bay St (West Side)    994              18.5             7.3
-Weekday 7-10 a.m.           2              Grand Avenue Park      Windsor St / Newcastle St    790              55.2             5.3
-Weekday 7-10 a.m.           3       King St W / Charlotte St King St W / Bay St (West Side)    780              19.4             5.1
+Weekday 7-10 a.m.           2              Grand Avenue Park      Windsor St / Newcastle St    789              55.1             5.3
+Weekday 7-10 a.m.           3       King St W / Charlotte St King St W / Bay St (West Side)    779              19.3             5.1
 Weekday 7-10 a.m.           4    John St / Mercer St - SMART King St W / Bay St (West Side)    539              21.7             4.2
-Weekday 7-10 a.m.           5     Front St W / Blue Jays Way                  Union Station    536               9.3             3.8
+Weekday 7-10 a.m.           5     Front St W / Blue Jays Way                  Union Station    535               9.3             3.8
 Weekday 7-10 a.m.           6    Spadina Ave / Adelaide St W         Adelaide St W / Bay St    510              23.9             6.9
 Weekday 7-10 a.m.           7       Frederick St / King St E King St W / Bay St (West Side)    506              16.2             5.3
 Weekday 7-10 a.m.           8       Bathurst St / Front St W King St W / Bay St (West Side)    494              10.7             9.7
@@ -220,7 +220,21 @@ Weekday 7-10 a.m.          10 Niagara St / King St W - SMART King St W / Bay St 
 ## 08. How do members and casual riders use the system differently?
 
 ```
-rider_type   trips  share_of_trips_pct  median_minutes  p90_minutes  longer_than_30_min_pct  round_trip_pct  weekend_pct  ebike_pct
-    Member 4649847                68.5            10.6         24.2                     5.0             1.6         23.5       19.5
-    Casual 2140442                31.5            15.5         55.3                    23.0             6.9         34.5       24.8
+rider_type   trips  share_of_trips_pct  median_minutes  p90_minutes  longer_than_30_min_pct  round_trip_pct  weekend_holiday_pct  ebike_pct
+    Member 4649847                68.5            10.6         24.2                     5.0             1.6                 25.7       19.5
+    Casual 2140442                31.5            15.5         55.3                    23.0             6.9                 38.5       24.8
+```
+
+## 09. Spotlight: why is Grand Avenue Park -> Windsor St / Newcastle St a top morning route?
+
+```
+                                     direction            time_window  trips  casual_pct  median_minutes  ebike_pct  trips_jan_apr  trips_may_sep  days_with_trips
+Grand Avenue Park -> Windsor St / Newcastle St    1 Weekday 7-10 a.m.    789        55.1             5.3       10.3            117            672              157
+Grand Avenue Park -> Windsor St / Newcastle St     2 Weekday 4-7 p.m.    126        57.1             5.0       15.9             18            108               79
+Grand Avenue Park -> Windsor St / Newcastle St 3 Weekday, other hours    283        78.4             5.0       20.8             37            246              123
+Grand Avenue Park -> Windsor St / Newcastle St      4 Weekend/holiday    210        57.6             5.4       13.3             32            178               58
+Windsor St / Newcastle St -> Grand Avenue Park    1 Weekday 7-10 a.m.      8        50.0             5.8       12.5              1              7                8
+Windsor St / Newcastle St -> Grand Avenue Park     2 Weekday 4-7 p.m.    633        65.6             5.1        6.5             87            546              147
+Windsor St / Newcastle St -> Grand Avenue Park 3 Weekday, other hours    408        65.7             5.0       15.9             68            340              142
+Windsor St / Newcastle St -> Grand Avenue Park      4 Weekend/holiday    199        59.8             6.0       10.6             21            178               55
 ```

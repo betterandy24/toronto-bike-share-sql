@@ -1,0 +1,9 @@
+direction,time_window,trips,casual_pct,median_minutes,ebike_pct,trips_jan_apr,trips_may_sep,days_with_trips
+Grand Avenue Park -> Windsor St / Newcastle St,1 Weekday 7-10 a.m.,789,55.1,5.3,10.3,117,672,157
+Grand Avenue Park -> Windsor St / Newcastle St,2 Weekday 4-7 p.m.,126,57.1,5.0,15.9,18,108,79
+Grand Avenue Park -> Windsor St / Newcastle St,"3 Weekday, other hours",283,78.4,5.0,20.8,37,246,123
+Grand Avenue Park -> Windsor St / Newcastle St,4 Weekend/holiday,210,57.6,5.4,13.3,32,178,58
+Windsor St / Newcastle St -> Grand Avenue Park,1 Weekday 7-10 a.m.,8,50.0,5.8,12.5,1,7,8
+Windsor St / Newcastle St -> Grand Avenue Park,2 Weekday 4-7 p.m.,633,65.6,5.1,6.5,87,546,147
+Windsor St / Newcastle St -> Grand Avenue Park,"3 Weekday, other hours",408,65.7,5.0,15.9,68,340,142
+Windsor St / Newcastle St -> Grand Avenue Park,4 Weekend/holiday,199,59.8,6.0,10.6,21,178,55

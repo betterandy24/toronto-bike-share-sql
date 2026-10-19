@@ -2,22 +2,25 @@
 
 How do Torontonians use Bike Share, and where does the system come under strain?
 This project answers eight business questions with SQL (DuckDB) on every trip recorded
-from January to September 2026, and turns the answers into findings an operator could act on.
+from January to September 2026, follows up on one surprising result, and turns the answers
+into findings an operator could act on.
 
 ![Stations that empty out or fill up in the morning rush](figures/morning_imbalance.png)
 
 ## Key findings
 
 1. **The morning rush moves bikes into the Financial District, and they don't come back on their own.**
-   On a typical weekday morning (7–10 a.m.), the station at King St W / Bay St (West Side)
-   receives about 185 bikes but sends out only about 3. That leaves a surplus of roughly
-   180 bikes to clear every morning. Six of the ten busiest morning routes end at this one
-   station. Residential stations around Fort York, CityPlace and Liberty Village lose bikes at the same time.
-   These are the first places a rebalancing crew should go.
+   On a typical weekday morning (7–10 a.m.) in the May–September riding season, the station
+   at King St W / Bay St (West Side) receives about 277 bikes but sends out only about 4.
+   That leaves a surplus of roughly 270 bikes to clear every morning, more than three times
+   the January–April figure (83). Six of the ten busiest morning routes end at this one
+   station. Residential stations around Fort York, CityPlace and Liberty Village lose 20–30
+   bikes each at the same time. These are the first places a rebalancing crew should go.
 2. **Members commute; casual riders explore.** Members make 69% of trips. Their weekday
    riding peaks at 8 a.m. and 5 p.m. Casual riders take longer trips: about 15.5 minutes
    for a typical ride, against 10.6 for members. They are more than four times as likely
-   to ride for over 30 minutes (23% vs 5%), and they ride more at weekends.
+   to ride for over 30 minutes (23% vs 5%), and more of their riding happens at weekends and
+   on public holidays (39% vs 26%).
 3. **Demand is highly seasonal.** August had 11 times as many trips as February
    (1.26 million vs 0.11 million). The casual share of riders rose from 8% in winter to 37%
    in August. Winter riders are almost all members.
@@ -26,17 +29,23 @@ from January to September 2026, and turns the answers into findings an operator 
 5. **The single busiest station is a leisure spot, not a commuter hub.** Centre Island
    Ferry Dock tops the list, and 96% of its riders are casual. All ten of the most popular
    routes overall are on the Toronto Islands.
-
+6. **One "commute" route is mostly non-members riding to the train.** The second-busiest
+   weekday-morning route, Grand Avenue Park → Windsor St / Newcastle St, behaves like a
+   commute: 789 weekday-morning trips that way against only 8 in the other direction, and
+   the reverse in the evening (633 trips back between 4 and 7 p.m.). The ride takes about
+   5 minutes and ends near Mimico GO Station, so these are most likely riders cycling to and
+   from the GO train. Yet 55–66% of them are casual riders, not members. Regular riders who
+   pay per trip are an obvious group to offer a membership.
 | | Members | Casual riders |
 |---|---|---|
 | Share of trips | 68.5% | 31.5% |
 | Typical (median) trip | 10.6 min | 15.5 min |
 | Longest 10% of trips start at | 24 min | 55 min |
 | Trips over 30 minutes | 5.0% | 23.0% |
-| Trips taken at weekends | 23.5% | 34.5% |
+| Trips on weekends or public holidays | 25.7% | 38.5% |
 | Trips on e-bikes | 19.5% | 24.8% |
 
-![Weekday vs weekend riding by hour](figures/hourly_pattern.png)
+![Riding by hour: members vs casual riders, weekdays vs weekends](figures/hourly_pattern.png)
 
 ![Trips per month](figures/monthly_trips.png)
 
@@ -44,16 +53,17 @@ from January to September 2026, and turns the answers into findings an operator 
 
 | File | Question | SQL techniques |
 |---|---|---|
-| `01_clean.sql` | Load and clean the raw trip file | Reading CSV straight from disk, explicit type conversion (`TRY_CAST`, `TRY_STRPTIME`), regex column matching, `CASE` recoding, a data-quality report built with `UNION ALL` and `FILTER` |
+| `01_clean.sql` | Load and clean the raw trip file | Reading CSV straight from disk, explicit type conversion (`TRY_CAST`, `TRY_STRPTIME`), regex column matching, `CASE` recoding, a public-holiday lookup table (`VALUES` + `LEFT JOIN`), a data-quality report built with `UNION ALL` and `FILTER` |
 | `02_monthly.sql` | How does ridership change through the year? | `GROUP BY` month, conditional counts (`FILTER`), `MEDIAN`, month-over-month change with `LAG` |
 | `03_hourly.sql` | When during the day do people ride? | Common table expressions (CTEs), averaging per day, share of the day with `SUM() OVER (PARTITION BY …)` |
 | `04_top_stations.sql` | Which stations are busiest? | `RANK`, running totals with window frames, joining to a station lookup table |
 | `05_concentration.sql` | How unequal is demand across stations? | `NTILE(10)` to split stations into ten equal groups |
-| `06_imbalance.sql` | Which stations empty out or fill up in the morning? | `UNION ALL` to stack departures and arrivals, `CROSS JOIN` to normalise per day, two-way ranking |
+| `06_imbalance.sql` | Which stations empty out or fill up in the morning? | `UNION ALL` to stack departures and arrivals, normalising per day by season, a self-join to set peak and off-peak side by side, two-way ranking |
 | `07_routes.sql` | What are the most popular routes, overall and for commuters? | Two joins to the same table (start and end station), `ROW_NUMBER` within groups |
 | `08_riders.sql` | How do members and casual riders differ? | Percentiles (`QUANTILE_CONT`), shares built from `CASE` inside `AVG` |
+| `09_spotlight_route.sql` | Follow-up: why is one short route a top commute? | Filtering joins to pick out two stations, string concatenation for direction labels, time-of-day buckets with `CASE`, `COUNT(DISTINCT …)` |
 
-`run_all.py` runs the eight files in order. It saves each answer to `results/` and draws
+`run_all.py` runs the nine files in order. It saves each answer to `results/` and draws
 the three charts. The full output of every query is in
 [`results/summary.md`](results/summary.md).
 
@@ -68,15 +78,18 @@ the three charts. The full output of every query is in
 
 Very short trips are usually a rider re-docking the same bike. Very long ones are usually
 bikes that were not returned properly. Each station gets the name it appears under most
-often, and extra spaces in names are removed. Rider labels are mapped to "Member" or
+often, and extra spaces in names are removed. Ontario public holidays are grouped with
+weekends, because commuting largely stops on those days. Rider labels are mapped to "Member" or
 "Casual" in a way that also works for older files, which used "Annual Member" and
 "Casual Member". The few trips on an unlisted bike model (ASTRO, 1%) are kept, but they
 are not counted as e-bikes.
 
 ## Limitations
 
-- The data covers January–September 2026 only, so the winter months are underrepresented.
-- Public holidays are counted as weekdays, which slightly lowers the weekday-morning averages.
+- October–December 2026 data has not been published yet, so totals for the year so far
+  lean towards the summer. Monthly and seasonal figures are reported separately for this reason.
+- Public holidays (seven in January–September) are grouped with weekends. Other days off,
+  such as school breaks, are still counted as ordinary weekdays.
 - Trip records show only where a ride starts and ends. They don't show bikes moved by
   the operator's trucks, so the morning surplus measures *rider* flows, not how full each
   station actually was.
