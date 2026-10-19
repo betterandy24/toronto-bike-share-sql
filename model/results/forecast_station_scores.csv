@@ -1,0 +1,4 @@
+model,mae_bikes_out,mae_bikes_in,mae_net,wape_net_pct
+Same weekday last week,2.37,2.19,2.62,55.1
+Average of last 4 weeks,1.99,1.97,2.25,47.4
+LightGBM,1.82,1.72,2.04,42.9

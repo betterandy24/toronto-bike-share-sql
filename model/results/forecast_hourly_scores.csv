@@ -1,0 +1,4 @@
+model,mae_trips_per_hour,wape_hourly_pct,wape_daily_total_pct
+naive,355.1,21.1,16.3
+regression,293.7,17.5,9.9
+lightgbm,237.5,14.1,9.9

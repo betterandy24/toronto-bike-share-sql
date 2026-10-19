@@ -1,0 +1,166 @@
+from_station,to_station,bikes,km
+Temperance St Station,Oak St / Sumach St,10.0,1.9
+Bremner Blvd / Rees St,Dan Leckie Way / Fort York Blvd,9.0,0.9
+King St W / York St (2),Western Battery Rd / Pirandello St,9.0,2.6
+Union Station (North) - SMART,Fort York Blvd / Capreol Ct,9.0,1.4
+University Ave / Pearl St,Lisgar Park,9.0,3.2
+Wellington St W / Bay St,Spadina Ave / Blue Jays Way,8.0,1.2
+Bay St / Queens Quay W (Ferry Terminal),Housey St / Dan Leckie Way,8.0,1.7
+Elizabeth St / Elm St,Church St / Wood St,8.0,0.8
+Wellington St W / Bay St,Front St E / Bayview Avenue,7.0,2.2
+York St / Queen St W (City Hall),Palmerston Ave / Dundas St W,7.0,2.0
+Metro Hall Plaza,Niagara St / Tecumseth St,7.0,1.4
+Simcoe St / Adelaide St W,803 Richmond St W,7.0,2.0
+Front St W / Bay St (South Side),Lower Sherbourne St / The Esplanade,7.0,1.0
+King St W / University Ave,Niagara St / King St W - SMART,7.0,2.0
+York St / Wellington St W (2),East Liberty St / Western Battery Rd,7.0,2.4
+Temperance St Station,Dundas St E / Regent Park Blvd,7.0,1.8
+Adelaide St W / Bay St,Dundas St E / Regent Park Blvd,7.0,1.9
+University Ave / King St W - SMART,King St W / Stafford St,6.0,2.2
+York St / Wellington St W (1),Bathurst St / Front St W,6.0,1.6
+Front St W / Simcoe St,Bathurst St / Fort York Blvd,6.0,1.2
+Simcoe St / Wellington St W (North) 3,Strachan Ave / East Liberty St - SMART,6.0,2.2
+King St W / University Ave,Shaw St / King St W,6.0,2.6
+King St W / York St,Tecumseth St / Tecumseth Pl,6.0,1.9
+Dundas St W / Yonge St,Granby St / Church St - SMART,5.0,0.6
+Bond St / Queen St E,Carlaw Ave / Strathcona Ave,5.0,3.5
+Front St W / Yonge St (Hockey Hall of Fame),Mill St / Cherry St,5.0,1.8
+Simcoe St / Wellington St W South,Bathurst St / Front St W,5.0,1.4
+Temperance St Station,Dundas St E / Parliament St,5.0,1.5
+Bay St / King St W,Bayview Ave / Lawren Harris Square,5.0,2.2
+Simcoe St / King St W,King St W / Crawford St,5.0,2.3
+York St / Queens Quay W,Bathurst St / Housey St,5.0,1.6
+Richmond St E / Yonge St (2),Dundas St E / Pembroke St,5.0,0.9
+King St E / Victoria St,King St E / River St,5.0,1.8
+Bay St / Queens Quay W (Ferry Terminal),Fort York Blvd/ Iannuzzi St,4.0,2.0
+King St W / Bay St (West Side),Dundas St E / Broadview Ave,4.0,2.8
+Bay St / Albert St,Church St / Dundas St E - SMART,4.0,0.6
+King St W / Bay St (West Side),Ordnance Park,4.0,2.5
+Simcoe St / Wellington St W (North) 3,Strachan Ave / Ordnance St,4.0,2.2
+University Ave / Richmond St W,Lisgar St / Queen St W - SMART,4.0,3.1
+Jack Layton Ferry Terminal,Dan Leckie Way / Fort York Blvd,4.0,1.7
+Yonge St / Dundas Sq,Sherbourne St / Carlton St (Allan Gardens),4.0,1.0
+Wellington St W / Bay St,Rolling Mill Rd / Front St E,4.0,2.0
+King St W / Bay St (East Side),Sumach St / Queen St E,4.0,1.9
+Front St W / University Ave (2),Fort York Blvd / Bathurst St - SMART,4.0,1.5
+Metro Hall Plaza,Lynn Williams St / Pirandello St,4.0,2.2
+Queens Park Cres / College St,Charles St W / Balmuto St - SMART,4.0,1.0
+Adelaide St W / Bay St,Dundas St E / River St,4.0,2.1
+Orde St / McCaul St,Bellwoods Ave / Treford Pl - SMART,3.0,1.8
+Simcoe St / Wellington St W (North),Lynn Williams St / East Liberty St,3.0,2.7
+Yonge St / Dundas Sq,439 Sherbourne St,3.0,1.2
+Simcoe St / Adelaide St W,Lisgar Park,3.0,3.1
+University Ave / Queen St W,Niagara St / Queen St W,3.0,1.9
+Gailbraith Rd / King's College Rd,College St / Crawford St,3.0,2.0
+King St W / Bay St (West Side),Dundas St E / Boulton Ave - SMART,3.0,3.1
+Bay St / College St (East Side),Bleecker St / St James Ave,3.0,1.3
+King St W / Bay St (West Side),Shuter St/River St,3.0,2.2
+Bremner Blvd / Rees St,Fort York Blvd / Capreol Ct,3.0,0.8
+Bay St / Albert St,Bleecker St / St James Ave,3.0,1.9
+Union Station,Fort York Blvd / Capreol Ct,3.0,1.4
+Dundas St W / Yonge St,Homewood Ave / Wellesley St E - SMART,3.0,1.3
+Bond St / Queen St E,Mutual St / Shuter St,3.0,0.2
+King St W / York St,Western Battery Rd / Pirandello St,3.0,2.6
+York St / Wellington St W (2),Niagara St / Portland St,3.0,1.4
+Adelaide St W / Bay St (South),Dundas St E / River St,3.0,2.1
+York St / Wellington St W (2),Strachan Ave / Ordnance St,3.0,2.4
+King St W / University Ave,King St W / Tecumseth St,3.0,1.8
+Ursula Franklin St / Huron St - SMART,Harbord St / Clinton St,3.0,1.4
+Elizabeth St / Elm St,Church St / Alexander St,3.0,0.9
+Temperance St Station,Moss Park,3.0,0.9
+Front St W / University Ave (1),Fort York Blvd / Bathurst St - SMART,3.0,1.5
+University Ave / King St W - SMART,King St W / Crawford St,3.0,2.4
+Simcoe St / Wellington St W South,Portland St / Front St W,3.0,1.2
+York St / Queen St W (City Hall),Claremont St / Dundas St W,3.0,2.2
+King St W / Bay St (East Side),Queen St E / Sackville St,3.0,1.7
+Wellington St W / Bay St,Fort York Blvd / Bathurst St - SMART,3.0,1.8
+Ursula Franklin St / St. George St - SMART,Concord Ave / Dewson St,3.0,2.3
+University Ave / Queen St W,Alma Ave / Gladstone Ave SMART,3.0,3.4
+York St / Queens Quay W,Little Norway Park,3.0,1.6
+Wellington St W / Bay St,Bathurst St / Fort York Blvd,3.0,1.8
+Queens Park Cres / College St,Isabella St / Church St,3.0,1.1
+Bremner Blvd / Rees St,Spadina Ave / Fort York Blvd,2.0,0.5
+Bay St / College St (East Side),Glen Rd / Bloor St,2.0,1.5
+Bay St / College St (East Side),Church St / Alexander St,2.0,0.6
+Temperance St Station,Gerrard St E / Broadview Ave - SMART,2.0,2.7
+King St W / Bay St (West Side),Highfield Rd / Gerrard St E,2.0,5.2
+King St E / Victoria St (2),Sumach St / Queen St E,2.0,1.6
+Surrey Pl / Dr. Emily Stowe Way - SMART,Glen Rd / Bloor St,2.0,1.6
+Simcoe St / Wellington St W (North) 2,Strachan Ave / Ordnance St,2.0,2.2
+Simcoe St / Pullan Pl,Claremont St / Dundas St W,2.0,1.9
+Duncan St / Adelaide St W - SMART,Lisgar St / Queen St W - SMART,2.0,2.9
+Simcoe St / Pullan Pl,Mary McCormick Rec Centre (Sheridan Ave),2.0,3.7
+Jack Layton Ferry Terminal,Fort York Blvd/ Iannuzzi St,2.0,2.0
+Adelaide St W / Yonge St,Shuter St/River St,2.0,1.9
+College St / Henry St,Bellwoods Ave / Treford Pl - SMART,2.0,1.7
+King St W / Bay St (West Side),Greenwood Ave / Gerrard St E,2.0,4.9
+Gailbraith Rd / King's College Rd,144 Harrison St,2.0,2.5
+Simcoe St / Wellington St W (North),Ordnance Park,2.0,2.0
+Toronto Eaton Centre (Yonge St) - SMART,Sherbourne St / Wellesley St E,2.0,1.4
+University Ave / King St W - SMART,Adelaide St W / Strachan Ave,2.0,2.3
+Ursula Franklin St / St. George St - SMART,Havelock St / Dewson St,2.0,2.7
+Simcoe St / Adelaide St W,Adelaide St W / Strachan Ave,2.0,2.2
+Hayter St / La Plante Ave,Church St / Alexander St,2.0,0.7
+York St / Queens Quay W,Lower Spadina Ave / Lake Shore Blvd W,2.0,0.9
+York St / Queens Quay W,Housey St / Dan Leckie Way,2.0,1.4
+Wellington St W / Bay St,Front St E / Cooperage St,2.0,1.9
+Front St W / Yonge St (Hockey Hall of Fame),The Esplanade / Hahn Pl,2.0,1.1
+Front St W / Yonge St (Hockey Hall of Fame),Mill St / Parliament St,2.0,1.3
+Simcoe St / Wellington St W South,135 Queens Wharf Rd - SMART,2.0,1.3
+Liberty St / Fraser Ave Green P,Lansdowne Ave / Seaforth Ave,2.0,1.2
+Gailbraith Rd / King's College Rd,Central Tech (Harbord St),2.0,1.0
+St. George St / Willcocks St,Palmerston Ave / Vermont Ave,2.0,1.8
+King St W / University Ave,King St W / Crawford St,2.0,2.4
+Ursula Franklin St / Huron St - SMART,Roxton Rd / Harbord St,2.0,2.0
+Temperance St / Bay St,Carlton St / Parliament St,2.0,1.9
+University Ave / College St (East),Glen Rd / Bloor St,2.0,1.8
+John St / Mercer St - SMART,Ordnance Park,2.0,1.7
+Simcoe St / Wellington St W (North),Lynn Williams St / Pirandello St,2.0,2.4
+King St W / Jordan St,Sumach St / Queen St E,2.0,1.8
+Queens Park Cres / College St,Ted Rogers Way / Bloor St E,2.0,1.5
+Queen St W / John St,Osler Playground (Argyle St),2.0,2.5
+Front St W / Simcoe St,135 Queens Wharf Rd - SMART,2.0,1.1
+Bond St / Queen St E,Sumach St / Carlton St (Riverdale Farm),1.0,1.8
+Bay St / Queens Quay W (Ferry Terminal),Fort York Blvd / Grand Magazine St,1.0,2.2
+King St W / Bay St (West Side),Western Battery Rd / Pirandello St,1.0,2.9
+King St W / York St,Niagara St / King St W - SMART,1.0,2.0
+King St W / York St,King St W / Douro St,1.0,2.8
+Bond St / Queen St E,Gerrard St E / River St,1.0,1.9
+Bond St / Queen St E,Dundas St E / Parliament St,1.0,1.1
+Bond St / Queen St E,Riverdale Park South (Broadview Ave),1.0,2.5
+Bay St / Albert St,Sherbourne St / Wellesley St E,1.0,1.7
+St. George St / Hoskin Ave,Kendal Ave / Spadina Rd,1.0,0.9
+Ursula Franklin St / St. George St - SMART,Rusholme Park Cres / College St,1.0,2.8
+Liberty St / Fraser Ave Green P,Tyndall Ave / King St W - SMART,1.0,0.4
+University Ave / Queen St W,Euclid Ave / Queen St W - SMART,1.0,1.7
+University Ave / Queen St W,Gladstone Ave / Queen St W,1.0,3.4
+Simcoe St / Adelaide St W,Bathurst St / Adelaide St W,1.0,1.4
+Front St W / Bay St (South Side),Cherry St / Distillery Ln,1.0,1.8
+Front St W / Bay St (South Side),Mill St / Cherry St,1.0,1.9
+Toronto Eaton Centre (Yonge St) - SMART,439 Sherbourne St,1.0,1.3
+Ursula Franklin St / St. George St - SMART,Shaw St / College St,1.0,1.9
+Ursula Franklin St / St. George St - SMART,Bloor St W / Pacific Ave,1.0,5.4
+St. George St / Hoskin Ave,St. Clair Ave W / Bathurst St,1.0,2.7
+25 York St – Union Station South,Fort York Blvd / Capreol Ct,1.0,1.3
+Liberty St / Fraser Ave Green P,Gladstone Ave / Queen St W,1.0,0.6
+Queen St W / John St,Alma Ave / Gladstone Ave SMART,1.0,3.0
+University Ave / Richmond St W,Niagara St / Queen St W,1.0,1.9
+Richmond St W / York St,Niagara St / Queen St W,1.0,2.2
+Ursula Franklin St / Huron St - SMART,Bloor St W / Pacific Ave,1.0,5.3
+Queen St W / John St,Mary McCormick Rec Centre (Sheridan Ave),1.0,3.4
+St. George St / Willcocks St,Lansdowne Ave / Dupont St,1.0,3.9
+St. George St / Willcocks St,Palmerston Blvd / Lennox St,1.0,1.2
+Queens Park Cres / College St,Glen Rd / Bloor St,1.0,1.8
+Temperance St / Bay St,Jarvis St / Dundas St E,1.0,0.9
+Armoury St / Chestnut St,Bellwoods Ave / Treford Pl - SMART,1.0,2.2
+Temperance St / Bay St,Church St / Dundas St E - SMART,1.0,0.8
+York St / Harbour St (Love Park),Dan Leckie Way / Fort York Blvd,1.0,1.4
+Queens Park Cres / College St,Bay St / Wellesley St W,1.0,0.5
+Adelaide St W / Bay St (South),Shuter St/River St,1.0,2.0
+Adelaide St W / Bay St (South),Logan Ave / Gerrard St E,1.0,3.3
+Duncan St / Adelaide St W - SMART,Lisgar Park,1.0,2.9
+Front St E / Scott St (2),Mill St / Cherry St,1.0,1.6
+Front St E / Scott St (2),Trinity St /Front St E,1.0,1.3
+Simcoe St / Wellington St W (North) 3,Bathurst St / Front St W,1.0,1.4
+King St E / Victoria St (2),King St E / River St,1.0,1.8
+King St E / Victoria St (2),Thompson St / Carroll St,1.0,2.2

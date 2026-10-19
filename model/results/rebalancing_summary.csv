@@ -1,0 +1,18 @@
+plan,budget,no_bike,no_dock,failed
+No rebalancing,0,381.0,995.0,1376.0
+Plan from 4-week average,100,310.0,914.0,1224.0
+Plan from 4-week average,250,222.0,788.0,1011.0
+Plan from 4-week average,500,135.0,693.0,827.0
+Plan from 4-week average,1000,116.0,688.0,804.0
+Plan from 4-week average (buffer 0),500,225.0,762.0,986.0
+Plan from 4-week average (buffer 6),500,168.0,703.0,871.0
+Plan from LightGBM forecast,100,312.0,912.0,1224.0
+Plan from LightGBM forecast,250,223.0,796.0,1019.0
+Plan from LightGBM forecast,500,146.0,703.0,849.0
+Plan from LightGBM forecast,1000,109.0,686.0,795.0
+Plan from LightGBM forecast (buffer 0),500,210.0,748.0,959.0
+Plan from LightGBM forecast (buffer 6),500,157.0,698.0,855.0
+Plan with perfect foresight,100,283.0,896.0,1179.0
+Plan with perfect foresight,250,153.0,751.0,905.0
+Plan with perfect foresight,500,14.0,621.0,635.0
+Plan with perfect foresight,1000,4.0,619.0,623.0
