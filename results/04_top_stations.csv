@@ -1,0 +1,16 @@
+station_rank,station_name,departures,share_of_all_trips_pct,cumulative_share_pct,casual_share_pct,n_stations
+1,Centre Island Ferry Dock,87490,1.29,1.3,96.0,1098
+2,York St / Queens Quay W,48037,0.71,2.0,43.2,1098
+3,Ward's Island Ferry Dock,44030,0.65,2.6,91.0,1098
+4,Centre Island,37276,0.55,3.2,93.0,1098
+5,Bay St / College St (East Side),36137,0.53,3.7,19.7,1098
+6,Widmer St / Adelaide St W,34366,0.51,4.2,28.0,1098
+6,King St W / Portland St,34366,0.51,4.7,29.2,1098
+8,Hanlan's Point Ferry Dock,33941,0.5,5.2,80.4,1098
+9,Queen St W / John St,32840,0.48,5.7,26.4,1098
+10,Bay St / Queens Quay W (Ferry Terminal),32177,0.47,6.2,47.4,1098
+11,Toronto Inukshuk Park,30911,0.46,6.7,55.9,1098
+12,College St / Major St,30718,0.45,7.1,26.4,1098
+13,Dundas St W / Crawford St,30578,0.45,7.6,34.0,1098
+14,Queens Quay E / Lower Jarvis St,29925,0.44,8.0,41.8,1098
+15,College St / Markham St,28631,0.42,8.4,27.8,1098

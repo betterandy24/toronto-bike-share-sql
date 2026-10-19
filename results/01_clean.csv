@@ -1,0 +1,6 @@
+step,trips
+Records in the files,6830174
+Missing a start or end station,12951
+Start time could not be read,0
+Shorter than 1 minute or longer than 3 hours,26934
+Trips kept for analysis,6790289

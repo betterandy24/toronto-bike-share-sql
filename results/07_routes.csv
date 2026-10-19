@@ -1,0 +1,21 @@
+view_name,route_rank,from_station,to_station,trips,casual_share_pct,median_minutes
+All trips,1,Centre Island Ferry Dock,Ward's Island Ferry Dock,17814,94.2,48.1
+All trips,2,Centre Island Ferry Dock,Centre Island,10328,94.7,44.4
+All trips,3,Centre Island,Ward's Island Ferry Dock,10202,90.7,29.0
+All trips,4,Ward's Island Ferry Dock,Centre Island Ferry Dock,10107,94.5,41.7
+All trips,5,Centre Island,Centre Island Ferry Dock,9624,96.2,43.4
+All trips,6,Ward's Island Ferry Dock,Centre Island,9356,89.8,30.0
+All trips,7,Hanlan's Point Ferry Dock,Hanlan's Point Beach,8800,60.6,6.1
+All trips,8,Centre Island Ferry Dock,Hanlan's Point Ferry Dock,8414,96.2,55.7
+All trips,9,Hanlan's Point Ferry Dock,Ward's Island Ferry Dock,6437,91.4,59.4
+All trips,10,Hanlan's Point Beach,Hanlan's Point Ferry Dock,6364,63.7,6.1
+Weekday 7-10 a.m.,1,King St W / Portland St,King St W / Bay St (West Side),994,18.5,7.3
+Weekday 7-10 a.m.,2,Grand Avenue Park,Windsor St / Newcastle St,790,55.2,5.3
+Weekday 7-10 a.m.,3,King St W / Charlotte St,King St W / Bay St (West Side),780,19.4,5.1
+Weekday 7-10 a.m.,4,John St / Mercer St - SMART,King St W / Bay St (West Side),539,21.7,4.2
+Weekday 7-10 a.m.,5,Front St W / Blue Jays Way,Union Station,536,9.3,3.8
+Weekday 7-10 a.m.,6,Spadina Ave / Adelaide St W,Adelaide St W / Bay St,510,23.9,6.9
+Weekday 7-10 a.m.,7,Frederick St / King St E,King St W / Bay St (West Side),506,16.2,5.3
+Weekday 7-10 a.m.,8,Bathurst St / Front St W,King St W / Bay St (West Side),494,10.7,9.7
+Weekday 7-10 a.m.,9,Widmer St / Adelaide St W,Adelaide St W / Bay St,482,24.1,5.6
+Weekday 7-10 a.m.,10,Niagara St / King St W - SMART,King St W / Bay St (West Side),443,14.2,10.0
