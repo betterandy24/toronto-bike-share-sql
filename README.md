@@ -36,6 +36,7 @@ into findings an operator could act on.
    5 minutes and ends near Mimico GO Station, so these are most likely riders cycling to and
    from the GO train. Yet 55–66% of them are casual riders, not members. Regular riders who
    pay per trip are an obvious group to offer a membership.
+
 | | Members | Casual riders |
 |---|---|---|
 | Share of trips | 68.5% | 31.5% |
