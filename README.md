@@ -16,10 +16,13 @@ should the operator do about it? The project moves through three steps:
 
 - Moving 500 bikes before 7 a.m., with a small safety buffer, cuts the riders who meet an
   empty or full station from about 1,380 to about 830–850 per weekday morning (−39%).
-- Most of the rest (about 620 a morning) is out of reach of any morning plan, even one
-  that knows the future. Nearly 90% of it happens at four Financial District stations
-  where 3 to 8 times more bikes arrive each morning than there are docks. A valet service
-  or more docks there would help where trucks cannot.
+  Of the problems a morning plan can reach, the plan built from a four-week average
+  removes 73% (the LightGBM plan, 70%).
+- The rest (about 620 a morning) is out of reach of any plan made before 7 a.m., even one
+  that knows the future. Nearly 90% of it is at four Financial District stations where
+  3 to 8 times more bikes arrive each morning than there are docks. These stations can
+  only absorb such flows because bikes are already being cleared during the rush; there,
+  mid-morning operations, not the overnight plan, keep the system working.
 - A more complex forecast (LightGBM) was 9% more accurate but did not produce a better
   plan than a simple four-week average. A safety buffer in the plan mattered more.
 
@@ -123,7 +126,8 @@ net flow for 7–10 a.m.
   within 3 bikes of empty or full, as a safety buffer against forecast error. Bikes are
   only moved, never created, and the total moved is capped by truck capacity.
 - Step 2, a transport problem, pairs the stations giving bikes with the stations receiving
-  them so that the trucks drive the shortest total distance.
+  them so as to minimise the total straight-line distance. It does not plan the trucks'
+  actual routes.
 
 **The test.** Every working weekday from July to September 2026 (63 mornings, 1,064
 stations with a known dock count, covering 98% of morning trips) is replayed with what
@@ -142,10 +146,12 @@ stock levels. Plans are compared with doing nothing and with a plan that knows t
 What the simulation shows:
 
 1. **Planning pays off, up to about 500 bikes a morning.** Moving 500 bikes cuts the
-   problems by almost 40%. Doubling to 1,000 adds little (804 with the four-week average,
-   795 with LightGBM).
+   problems by almost 40%. Measured against what a morning plan can reach (about 750 of
+   the 1,376 problems; the rest is point 2), the four-week-average plan removes 73% and
+   the LightGBM plan 70%; perfect foresight would remove 98%. Doubling to 1,000 bikes adds
+   little (804 with the four-week average, 795 with LightGBM).
 2. **Almost half the problem is out of reach of any morning plan.** About 620 riders a
-   morning meet a full or empty station even with perfect foresight. They are at stations
+   morning would meet a full or empty station even with perfect foresight. They are at stations
    whose morning inflow is several times their dock count. Four Financial District
    stations account for 89% of them:
 
@@ -156,18 +162,21 @@ What the simulation shows:
    | Temperance St Station | 55 | +153 |
    | Front St W / Bay St (South Side) | 19 | +72 |
 
-   Emptying these stations overnight cannot absorb inflows of this size. Staff collecting
-   bikes there during the rush (a valet service), more docks, or trucks emptying them
-   mid-morning can.
+   Emptying these stations before 7 a.m. cannot absorb inflows of this size. In reality,
+   riders can only return this many bikes because bikes are already being cleared during
+   the rush (by staff or trucks); the trip data cannot show how this is done today or
+   what it costs. At these stations, ongoing mid-morning operations, not a plan made
+   before 7 a.m., keep the system working. In the simulation, the 620 is best read as
+   the bikes that have to be cleared during the rush.
 3. **A better forecast did not make a better plan; the safety buffer did.** LightGBM's
    station forecasts are 9% more accurate, but its plan does no better than one built from
    a simple four-week average (849 vs 827). Leaving out the safety buffer made both plans
-   worse (959 for LightGBM, 986 for the four-week average), so how a plan handles uncertainty matters more than squeezing a
-   little more accuracy out of the forecast. Making the buffer bigger (6 bikes instead of
+   worse (959 for LightGBM, 986 for the four-week average), so how a plan handles
+   uncertainty matters more than squeezing a little more accuracy out of the forecast. Making the buffer bigger (6 bikes instead of
    3) did not help either (855 and 871).
 
 **An example plan.** On Wednesday 15 July 2026, the plan moves 500 bikes in 165 station-to-station
-moves, about 1.9 km per bike on average. The largest moves take bikes from Financial
+moves, about 1.9 km per bike on average (straight-line distance between stations). The largest moves take bikes from Financial
 District stations that fill up during the rush to residential stations that empty out:
 Temperance St Station → Oak St / Sumach St (10 bikes), Bremner Blvd / Rees St → Dan Leckie
 Way / Fort York Blvd (9), Union Station (North) → Fort York Blvd / Capreol Ct (9). The full

@@ -7,7 +7,7 @@ as possible meet an empty station (no bike) or a full one (no free dock) by 10 a
 Step 1 (integer programme, PuLP + HiGHS): given each station's dock count and its forecast
 net flow for 7-10 a.m., choose how many bikes each station should hold at 7 a.m.
 Step 2 (transport problem): pair the stations losing bikes with the stations gaining them
-so that the trucks drive the shortest total distance.
+so as to minimise the total straight-line distance (station pairs, not truck routes).
 
 The plans are then replayed against what riders actually did on each working weekday of
 July-September 2026. Assumptions, stated plainly:
@@ -77,7 +77,8 @@ def replay(cap, held, net_actual):
 
 
 def truck_moves(stations, held, start):
-    """Pair stations giving bikes with stations receiving them, shortest total km (step 2)."""
+    """Pair stations giving bikes with stations receiving them, minimising total straight-line
+    km (step 2). This pairs stations; it does not plan the trucks' actual routes."""
     change = held - start
     give = stations[change < -0.5].assign(bikes=-change[change < -0.5])
     take = stations[change > 0.5].assign(bikes=change[change > 0.5])
@@ -159,7 +160,7 @@ moves = truck_moves(example["d"], example["held"], example["start"])
 moves = moves.sort_values("bikes", ascending=False).round(1)
 moves.to_csv(RES / "example_day_moves.csv", index=False)
 print(f"{EXAMPLE_DAY:%d %b %Y}: {moves['bikes'].sum():.0f} bikes in {len(moves)} moves, "
-      f"{(moves['bikes'] * moves['km']).sum() / moves['bikes'].sum():.1f} km per bike on average")
+      f"{(moves['bikes'] * moves['km']).sum() / moves['bikes'].sum():.1f} straight-line km per bike on average")
 print(moves.head(10).to_string(index=False))
 
 # Chart: riders meeting an empty or full station, by plan and truck budget
