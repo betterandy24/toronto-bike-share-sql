@@ -12,6 +12,8 @@ should the operator do about it? The project moves through three steps:
    trucks should take bikes from and which they should fill before 7 a.m., tested by
    replaying every weekday morning of July–September 2026.
 
+**One-page summary:** [summary.pdf](summary.pdf)
+
 **Bottom line for the operator** (simulation of July–September 2026 weekday mornings):
 
 - Moving 500 bikes before 7 a.m., with a small safety buffer, cuts the riders who meet an
