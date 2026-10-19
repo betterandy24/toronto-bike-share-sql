@@ -14,7 +14,7 @@ into findings an operator could act on.
    at King St W / Bay St (West Side) receives about 277 bikes but sends out only about 4.
    That leaves a surplus of roughly 270 bikes to clear every morning, more than three times
    the January–April figure (83). Six of the ten busiest morning routes end at this one
-   station. Residential stations around Fort York, CityPlace and Liberty Village lose 20–30
+   station. Residential stations around Fort York, CityPlace and Liberty Village lose about 20–30
    bikes each at the same time. These are the first places a rebalancing crew should go.
 2. **Members commute; casual riders explore.** Members make 69% of trips. Their weekday
    riding peaks at 8 a.m. and 5 p.m. Casual riders take longer trips: about 15.5 minutes
@@ -34,8 +34,9 @@ into findings an operator could act on.
    commute: 789 weekday-morning trips that way against only 8 in the other direction, and
    the reverse in the evening (633 trips back between 4 and 7 p.m.). The ride takes about
    5 minutes and ends near Mimico GO Station, so these are most likely riders cycling to and
-   from the GO train. Yet 55–66% of them are casual riders, not members. Regular riders who
-   pay per trip are an obvious group to offer a membership.
+   from the GO train. Demand is steady: there were morning trips on this route on 157
+   weekdays. Yet 55–66% of the trips are made by casual riders, not members, which makes
+   this station pair a natural place to promote membership.
 
 | | Members | Casual riders |
 |---|---|---|
@@ -91,6 +92,9 @@ are not counted as e-bikes.
   lean towards the summer. Monthly and seasonal figures are reported separately for this reason.
 - Public holidays (seven in January–September) are grouped with weekends. Other days off,
   such as school breaks, are still counted as ordinary weekdays.
+- The data has no rider IDs, so it cannot show whether the same people ride a route every
+  day or many people ride it once. For the Mimico route, the evidence of a regular commute
+  is the steady daily pattern, not repeat riders.
 - Trip records show only where a ride starts and ends. They don't show bikes moved by
   the operator's trucks, so the morning surplus measures *rider* flows, not how full each
   station actually was.
